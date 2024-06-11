@@ -3,7 +3,8 @@ import { Style } from "@/types/interfaces";
 const createStyledSpan = (style: Style) => {
 	const span = document.createElement("span");
 	Object.entries(style).forEach(([key, value]) => {
-		span.style[Number(key)] = value?.toString();
+		// @ts-expect-error
+		span.style[key as keyof CSSStyleDeclaration] = value.toString();
 	});
 	return span;
 };

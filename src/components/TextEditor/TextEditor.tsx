@@ -59,7 +59,6 @@ const TextEditor: FC = () => {
     });
 
     console.log(JSON.stringify(textBlocks, null, 2));
-    console.log(textBlocks);
   };
 
 	return (
