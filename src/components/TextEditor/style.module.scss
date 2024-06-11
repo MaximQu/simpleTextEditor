@@ -20,10 +20,19 @@
 	padding: 1rem;
 	width: 100%;
 
+  label {
+    width: 100%;
+  }
+
 	label span {
 		display: block;
 		margin-bottom: 0.5rem;
 	}
+
+  @media(width <= 435px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .input {
@@ -33,6 +42,7 @@
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 	outline: transparent;
+  width: 100%;
 
 	&:focus {
 		border-color: var(--c-primary-700);
