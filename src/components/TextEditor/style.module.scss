@@ -1,0 +1,52 @@
+@use "@st/utils";
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 3rem;
+	max-width: 27rem;
+	margin-inline: auto;
+}
+
+.wrapper {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-end;
+	border: 1px solid var(--c-primary-700);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	width: 100%;
+
+	label span {
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+}
+
+.input {
+	border: 1px solid transparent;
+
+	background-color: var(--c-primary-300);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	outline: transparent;
+
+	&:focus {
+		border-color: var(--c-primary-700);
+	}
+}
+
+.btnJson {
+	max-width: 100%;
+}
+
+.textField {
+	width: 100%;
+	border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.625rem;
+  min-height: 12.5rem;
+}

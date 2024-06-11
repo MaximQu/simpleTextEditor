@@ -1,0 +1,1 @@
+export { applyStyle } from './applyStyle';

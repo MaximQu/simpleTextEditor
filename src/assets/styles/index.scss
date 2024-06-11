@@ -1,0 +1,25 @@
+@use "./reset";
+@use "./vars";
+@use "./utils";
+@use "./fonts";
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: var(--c-primary-800);
+	font-weight: var(--fw-reg);
+	background-color: var(--c-primary-100);
+	line-height: 1;
+	font-size: 1rem;
+  min-height: 100vh;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+
+	main {
+    margin-top: 3rem;
+		flex: 1;
+	}
+}
